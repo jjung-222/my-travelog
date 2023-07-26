@@ -12,6 +12,25 @@
   align-items: center;
 }
 
+.grow a{
+  color: #0070f3;
+  cursor: pointer;
+}
+
+.headerMenu a{
+  color: #0070f3;
+  cursor: pointer;
+}
+
+.header {
+  flex: 1;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   display: flex;
   flex: 1;
