@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '../../../styles/Home.module.css'
-import {useState} from "react";
+import React, {useState} from "react";
 import {useRouter} from "next/router";
 import MenuItem from "../Items/MenuItem";
 
@@ -27,7 +27,7 @@ export default function Header() {
                 </div>
                 <div style={{display:"inline-block", width:"33%", textAlign:"center"}}>
                     {menuItem.map((item, index) => {
-                        return  <MenuItem item={item}/>
+                        return  <MenuItem key={index} item={item}/>
                     })}
                 </div>
                 <div className={isHovering ? styles.grow : ""} style={{display:"inline-block", width:"33%", textAlign:"right"}}>

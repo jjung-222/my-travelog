@@ -1,7 +1,16 @@
 import '../styles/globals.css'
+import React from "react";
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+    return (
+        <>
+            <Head>
+                <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+            </Head>
+            <Component {...pageProps} />
+        </>
+    )
 }
 
 export default MyApp
