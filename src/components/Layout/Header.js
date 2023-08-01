@@ -22,15 +22,15 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div>
-                <div className={styles.logo} style={{display:"inline-block", width:"33%"}}>
+                <div className={styles.logo}>
                     <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
                 </div>
-                <div style={{display:"inline-block", width:"33%", textAlign:"center"}}>
+                <div className={styles.headerMenu}>
                     {menuItem.map((item, index) => {
                         return  <MenuItem key={index} item={item}/>
                     })}
                 </div>
-                <div className={isHovering ? styles.grow : ""} style={{display:"inline-block", width:"33%", textAlign:"right"}}>
+                <div className={isHovering ? styles.loginText_hover : styles.loginText}>
                     <p onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}> Get started by{' '} <a onClick={()=>{Router.push("/auth")}}>SignIn / SignUp</a> </p>
                 </div>
 

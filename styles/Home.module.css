@@ -12,12 +12,21 @@
   align-items: center;
 }
 
-.grow a{
-  color: #0070f3;
-  cursor: pointer;
+.loginText {
+  display: inline-block;
+  width: 33%;
+  text-align: right;
+  color: black;
 }
 
-.headerMenu a{
+.loginText_hover {
+  display: inline-block;
+  width: 33%;
+  text-align: right;
+  color: black;
+}
+
+.loginText_hover a{
   color: #0070f3;
   cursor: pointer;
 }
@@ -31,6 +40,23 @@
   align-items: center;
 }
 
+.headerMenu {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.headerMenuText_hover {
+  color: #0070f3;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.headerMenuText {
+  color: black;
+  display: inline-block;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -41,10 +67,15 @@
 }
 
 .footer a {
-  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.footerLogo {
+  height: 1em;
+  width: 33%;
 }
 
 .title a {
@@ -81,7 +112,7 @@
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -125,6 +156,8 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+  display: inline-block;
+  width: 33%;
 }
 
 @media (max-width: 600px) {

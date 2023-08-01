@@ -18,7 +18,7 @@ export default function MenuItem(props) {
 
 
     return (
-        <div className={isHovering ? styles.headerMenu : ""} style={{display: "inline-block"}} >
+        <div className={isHovering ? styles.headerMenuText_hover : styles.headerMenuText} >
             <a onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}
                href="http://wiss.tistory.com"
                style={{padding: "10px", margin: "10px", display: "inline-block"}}>{props.item}</a>
