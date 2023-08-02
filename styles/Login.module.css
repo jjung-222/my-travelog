@@ -1,0 +1,119 @@
+.loginContainer {
+    height: 100vh;
+    position: relative;
+    background-image: url("../public/imgs/building.gif");
+    background-size: cover;
+}
+
+
+
+.loginContent {
+    position:absolute;
+    top: 8%;
+    left: 32%;
+    width: 36%;
+    height: 90%;
+    border: 1px solid #a5a5a5;
+    border-radius: 10px;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+.loginPageLogo {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding-Top: 90px;
+}
+
+.loginFormContainer {
+    height: 28%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginLabel1 {
+    float: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.loginLabel2 {
+    float: right;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-right: 5%;
+    color: #a5a5a5;
+}
+
+.loginInputId {
+    height: 40px;
+    width: 100%;
+    font-size: 17px;
+    border: 0px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.loginInputPw {
+    height: 40px;
+    width: 100%;
+    font-size: 17px;
+    border: 0px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.loginBtn {
+    height: 40px;
+    width: 90%;
+    fontSize: 17px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 0px;
+    color: white;
+    background: #127eff;
+}
+
+.divideBorder {
+    width: 90%;
+    height: 2%;
+    border-bottom: 1px solid #000000;
+    margin: 5%;
+}
+
+.simpleLoginContainer {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.simpleLoginTitle {
+    margin: 0px;
+}
+
+.simpleLoginSubContainer {
+    display: flex;
+    margin-left: 15px;
+}
+
+.simpleLoginItem {
+    padding: 10px;
+}
+
+.inputContainer {
+    height: 82px;
+    width: 90%;
+    border: 1px solid #a5a5a5;
+    border-radius: 15px;
+    margin: auto;
+    padding: 0px 15px 0px;
+}
