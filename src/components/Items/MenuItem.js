@@ -5,23 +5,29 @@ import {useRouter} from "next/router";
 export default function MenuItem(props) {
 
     const Router = useRouter()
-    const [isHovering, setIsHovering] = useState(false);
 
-    const handleMouseOver = () => {
-        setIsHovering(true);
-    };
-
-    const handleMouseOut = () => {
-        setIsHovering(false);
-    };
-
-
+    const onClick = () => {
+        switch (props.item) {
+            case "Travelog":
+                Router.push("./travelog")
+                break;
+            case "Share" :
+                Router.push("./share")
+                break;
+            case "Planner" :
+                Router.push("./planner")
+                break;
+            case "Help" :
+                Router.push("./help")
+                break;
+            default:
+                break;
+        }
+    }
 
     return (
-        <div className={isHovering ? styles.headerMenuText_hover : styles.headerMenuText} >
-            <a onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}
-               href="http://wiss.tistory.com"
-               style={{padding: "10px", margin: "10px", display: "inline-block"}}>{props.item}</a>
+        <div className={styles.headerMenuText} >
+            <a onClick={onClick}>{props.item}</a>
         </div>
     )
 }

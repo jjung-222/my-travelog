@@ -18,7 +18,7 @@ const KakaoLoginBtn = ({ onSuccess, onFailure }) => {
                 onLogout={console.info}
                 render={({ onClick }) => (
                     <div onClick={onClick}>
-                        <img src="imgs/kakao.png" width={65} height={65}/>
+                        <img src="imgs/kakao.png" width={55} height={55}/>
                     </div>
                 )}
             />

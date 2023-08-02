@@ -5,33 +5,23 @@ import {useRouter} from "next/router";
 import MenuItem from "../Items/MenuItem";
 
 export default function Header() {
-    const menuItem = ["Make", "Share", "Planner", "Help"];
+    const menuItem = ["Travelog", "Share", "Planner", "Help"];
 
     const Router = useRouter()
-    const [isHovering, setIsHovering] = useState(false);
-    const [isHovering2, setIsHovering2] = useState(false);
-
-    const handleMouseOver = () => {
-        setIsHovering(true);
-    };
-
-    const handleMouseOut = () => {
-        setIsHovering(false);
-    };
 
     return (
         <header className={styles.header}>
             <div>
                 <div className={styles.logo}>
-                    <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                    <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} onClick={()=>Router.push("./main")}/>
                 </div>
                 <div className={styles.headerMenu}>
                     {menuItem.map((item, index) => {
                         return  <MenuItem key={index} item={item}/>
                     })}
                 </div>
-                <div className={isHovering ? styles.loginText_hover : styles.loginText}>
-                    <p onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}> Get started by{' '} <a onClick={()=>{Router.push("/auth")}}>SignIn / SignUp</a> </p>
+                <div className={styles.loginText}>
+                    <p> Get started by{' '} <a onClick={()=>{Router.push("/auth")}}>SignIn / SignUp</a> </p>
                 </div>
 
             </div>
