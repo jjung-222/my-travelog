@@ -6,6 +6,8 @@
     border: 1px solid #000000;
     overflow-y: scroll;
     flex-direction: column;
+    background-color: #ffffff;
+    opacity: 1;
 }
 
 .title1 {
@@ -20,20 +22,51 @@
 }
 
 .plannerCalender {
+    display: flex;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     border: 1px solid #000000;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
 .assetStatusContainer {
+    display: flex;
     position: relative;
     width: 100%;
-    height: 100%;
-    border: 1px solid #000000;
-    margin-bottom: 5%;
+    height: 50vh;
+    margin-bottom: 4%;
+    position: relative;
+}
+
+.navbarMenu{
+    width:100%;
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.navbarMenu li {
+    padding: 8px 12px;
+
+}
+
+.navContainer {
+    margin-top: 3%;
+    border-bottom: 1px solid #333;
+}
+
+.navbarMenu :hover {
+    background: #eeeeee;
+    border-radius: 4px 4px 0 0;
+}
+
+.selected {
+    background: #333;
+    color: #ffffff;
+    border-radius: 4px 4px 0 0;
 }
 
 .assetStatus {
@@ -63,4 +96,89 @@
     width: 100%;
     height: 40%;
     border: 1px solid #000000;
+}
+
+
+.calendarContainer {
+    height:90vh;
+    width:100%;
+    font-size: 1.5vh;
+    display: flex;      /* display 설정해줘야 아래 flex로 해주면 direction 선택가능*/
+    flex-direction: column;   /* 이건 세로순으로  태그들을 표시함 css*/
+    align-items: center;      /* 이건 가로 중앙 css*/
+    justify-content: flex-start;  /* 이건 세로 중앙 css*/
+    padding: 5%;
+}
+
+
+.Date {
+    font-size: 20px;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+.control {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.calendarTable{
+    margin:0;
+    display:flex;
+    width:100%;
+    height:70%;
+}
+.calendarTbody{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.calendarTr{
+    display:flex;
+    flex-direction: row;
+}
+.calendarTd{
+    display:flex;
+    border:1px solid gray;
+    width:15%;
+    height:15vh;
+}
+
+.calendartoday{
+    display:flex;
+    border:1px solid gray;
+    width:15%;
+    height:100%;
+    background-color: peachpuff;
+}
+
+.dayItem {
+   border:1px solid red;
+    width: 100%;
+    height: 100% ;
+}
+
+.calendarother{
+    display:flex;
+    border:1px solid gray;
+    width:15%;
+    height:15vh;
+    background-color: #eaeaea;
+}
+
+.App td span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inputContainer {
+    border: 1px solid #333333;
+    height: 38px;
+    border-radius: 8px;
+}
+.inputStyle {
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    margin: 5px;
 }
