@@ -5,6 +5,7 @@ export default function Calender() {
 
     return (
         <>
+            달력
         </>
 
     )
