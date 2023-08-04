@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import plannerStyles from "../../../styles/Planner.module.css";
 import {ChevronLeft, ChevronRight} from '@mui/icons-material';
+import TodoListItem from "./TodoListItem";
 
 function TodoList() {
     let today = new Date();
@@ -20,12 +21,14 @@ function TodoList() {
     const onChange = (e) => {
 
     }
+
     return (
-        <div>
-            <p>{dateString}</p>
-            <div className={plannerStyles.inputContainer}>
-                <input className={plannerStyles.inputStyle} type="text" value={currentData.inputText} onChange={onChange} />
+        <div className={plannerStyles.plannerTodoContainer}>
+            <h2>{dateString}</h2>
+            <div>
+                <TodoListItem text="프로젝트 생성하기" done={true} />
             </div>
+
         </div>
     );
 }

@@ -1,8 +1,9 @@
 import styles from "../../../styles/Home.module.css";
 import plannerStyles from "../../../styles/Planner.module.css";
 import React, {useState} from "react";
-import Calendar from "../planner/Calendar";
+import CalendarContent from "../planner/CalendarContent";
 import TodoList from "../planner/TodoList";
+import TodoListAdd from "../planner/TodoListAdd";
 
 export default function PlannerPage() {
     const [selected, setSelected] = useState("CALENDAR");
@@ -40,14 +41,19 @@ export default function PlannerPage() {
                 {
                     selected == "CALENDAR" &&
                     <div className={plannerStyles.plannerCalender}>
-                        <Calendar />
+                        <CalendarContent />
                     </div>
                 }
 
                 {
                     selected == "TODO" &&
-                    <div className={plannerStyles.plannerCalender}>
-                        <TodoList />
+                    <div>
+                        <div className={plannerStyles.plannerTodo}>
+                            <TodoList />
+                        </div>
+                        <div>
+
+                        </div>
                     </div>
                 }
 
