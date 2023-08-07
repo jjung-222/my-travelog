@@ -7,7 +7,7 @@ export default function SharePage() {
 
     return (
         <main className={styles.main2}>
-            <div className={plannerStyles.plannerContainer}>
+            <div className={plannerStyles.shareContainer}>
                 <ShareList />
             </div>
         </main>

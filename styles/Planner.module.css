@@ -1,8 +1,19 @@
 .plannerContainer {
     padding: 2%;
     display: flex;
+    height: 100%;
     width: 70%;
     border: 1px solid #000000;
+    overflow-y: scroll;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255); //background-color: rgba(255, 255, 255, 0.5);
+}
+
+.shareContainer {
+    padding: 2%;
+    display: flex;
+    height: 100%;
+    width: 70%;
     overflow-y: scroll;
     flex-direction: column;
     background-color: rgba(255, 255, 255); //background-color: rgba(255, 255, 255, 0.5);

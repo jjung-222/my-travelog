@@ -4,6 +4,9 @@ import React, {useState} from "react";
 import CalendarContent from "../planner/CalendarContent";
 import TodoList from "../planner/TodoList";
 import TodoListAdd from "../planner/TodoListAdd";
+import Budgets from "../planner/Budgets";
+import TodayBudgetItem from "../planner/TodayBudgetItem";
+import BudgetInput from "../planner/BudgetInput";
 
 export default function PlannerPage() {
     const [selected, setSelected] = useState("CALENDAR");
@@ -60,55 +63,13 @@ export default function PlannerPage() {
                 {
                     selected == "BUDGET" &&
                     <div>
-                        <div className={plannerStyles.assetStatusContainer}>
-                            <div style={{border:"1px solid #333", width: "50%", margin:"5px"}}>
-                                chart
-                            </div>
-                            <div style={{width: "50%",height:"25vh", margin:"20px", textAlign:"center"}}>
-                                <table style={{width:"100%",height:"100%", top:"5px"}}>
-                                    <tr>
-                                        <th style={{backgroundColor:"#333333", width:"40%", color:"white"}}>INITIAL BUDGET</th>
-                                        <td style={{border:"1px solid #333333", width:"60%"}}>6,000,000</td>
-                                    </tr>
-                                    <tr>
-                                        <th style={{backgroundColor:"#333333", width:"40%", color:"white"}}>TOTAL INCOME</th>
-                                        <td style={{border:"1px solid #333333", width:"60%"}}>1,000,000</td>
-                                    </tr>
-                                    <tr>
-                                        <th style={{backgroundColor:"#333333", width:"40%", color:"white"}}>TOTAL EXPENSE</th>
-                                        <td style={{border:"1px solid #333333", width:"60%"}}>2,000,000</td>
-                                    </tr>
-                                    <tr>
-                                        <th style={{backgroundColor:"#333333", width:"40%", color:"white"}}>TOTAL BUDGET</th>
-                                        <td style={{border:"1px solid #333333", width:"60%"}}>5,000,000</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+                        <Budgets />
                         <h2 style={{margin: "0", textAlign:"center"}}>TODAY'S </h2>
                         <div style={{height:"10vh", display:"flex", marginBottom:"2%", textAlign:"center"}}>
-                            <div style={{width: "50%", margin:"5px"}}>
-                                <div style={{border:"1px solid #333", backgroundColor:"#333333", width: "100%", height:"35px", color:"#ffffff"}}><p style={{margin:"0", fontSize:"19px"}}>INCOME</p></div>
-                                <div style={{border:"1px solid #333", width: "100%", height:"35px"}}>1,000,000</div>
-                            </div>
-                            <div style={{width: "50%", margin:"5px"}}>
-                                <div style={{border:"1px solid #333", backgroundColor:"#333333", width: "100%", height:"35px", color:"#ffffff"}}><p style={{margin:"0", fontSize:"19px"}}>EXPENSE</p></div>
-                                <div style={{border:"1px solid #333", width: "100%", height:"35px"}}>2,000,000</div>
-                            </div>
+                            <TodayBudgetItem />
+                            <TodayBudgetItem />
                         </div>
-                        <div className={plannerStyles.assetListContainer}>
-                            <div><input type="text" placeholder="금액을 입력해 주세요"/><button>INCOME</button><button>EXPENSE</button></div>
-                            <div style={{overflowY: "hidden"}}>
-                                <div>1,000,000</div>
-                                <div>1,000,000</div>
-                                <div>1,000,000</div>
-                                <div>1,000,000</div>
-                                <div>1,000,000</div>
-                                <div>1,000,000</div>
-                                <div>1,000,000</div>
-                            </div>
-
-                        </div>
+                        <BudgetInput />
                     </div>
                 }
 
