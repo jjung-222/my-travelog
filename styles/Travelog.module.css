@@ -1,0 +1,62 @@
+.travelogContainer {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    border: 1px solid #000000;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255); //background-color: rgba(255, 255, 255, 0.5);
+}
+
+.timelineLog {
+    text-align: center;
+    margin: 1%;
+    height: 780px;
+    width: 30%;
+    border: 1px solid #000000;
+    overflow-y: scroll;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
+}
+
+.content {
+    margin: 1%;
+    width: 62%;
+    border: 1px solid #000000;
+}
+
+.radioBtn {
+    margin: 20px;
+}
+
+.inputStyle {
+    margin-bottom: 5px;
+}
+
+.btnGroupStyle {
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 15px;
+}
+
+.btnStyle1 {
+    width: 100%;
+    margin-bottom: 5px;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.btnStyle2 {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.btnStyle2Reverse {
+    width: 100%;
+    margin-bottom: 5px;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.inputMemo {
+    margin-right: 0px;
+}

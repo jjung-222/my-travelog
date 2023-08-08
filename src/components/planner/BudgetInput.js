@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import plannerStyles from "../../../styles/Planner.module.css";
-
-import {InputNumber, Select, Space, Button, List, Input, ColorPicker} from 'antd';
+import {InputNumber, Select, Space, Button, List, Input } from 'antd';
 import { FormOutlined } from '@ant-design/icons';
 
 function BudgetInput() {
@@ -27,8 +26,8 @@ function BudgetInput() {
             });
         }, 1000);
 
-        budgetList.push(budgetData);
-        setBudgetList(budgetList);
+        let newBudgetList = budgetList.concat(budgetData);
+        setBudgetList(newBudgetList);
         setBudgetData({memo: "", amounts: null, prefix: "+", postfix:"KRW"});
     };
 
