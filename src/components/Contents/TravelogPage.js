@@ -22,6 +22,7 @@ export default function TravelogPage() {
     }
 
     const onInputChangeMemo = (e) => {
+        //git test
         setLog({...log, children: e.target.value})
     }
 
