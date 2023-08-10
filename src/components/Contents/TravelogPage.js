@@ -17,6 +17,7 @@ export default function TravelogPage() {
     };
 
     const onChangeDate = (date, dateString) => {
+        //push 쓰지말기
         setLog({...log, label: dateString, date: date})
     }
 
