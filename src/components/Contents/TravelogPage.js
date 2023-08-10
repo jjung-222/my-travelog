@@ -22,7 +22,7 @@ export default function TravelogPage() {
     }
 
     const onInputChangeMemo = (e) => {
-        //git test
+        //git test ddd
         setLog({...log, children: e.target.value})
     }
 
