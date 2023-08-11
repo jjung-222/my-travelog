@@ -134,7 +134,7 @@ export default function TravelogPage() {
 
                     <div style={{display: "grid", gridTemplateColumns:"33% 33% 33%", textAlign:"center"}}>
                         {[1, 2, 3, 4, 5, 6, 7].map(() => {
-                            return <div style={{height:"30vh", marginLeft: "6px", marginTop: "6px", border:"1px solid #333333"}}>ddddd</div>
+                            return <div style={{height:"30vh", marginLeft: "6px", marginTop: "6px", border:"1px solid #333333"}}>layout</div>
                         })}
                     </div>
 
