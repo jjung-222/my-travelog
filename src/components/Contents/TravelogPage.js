@@ -126,6 +126,18 @@ export default function TravelogPage() {
                     }
                 </div>
                 <div className={travelogStyles.content}>
+                    <div style={{display:"flex", height:"30vh"}}>
+                        <div style={{border : "1px solid #333333", width: "40%", height: "100%"}}></div>
+                        <div style={{border : "1px solid red", width: "60%", height: "100%"}}></div>
+                    </div>
+
+
+                    <div style={{display: "grid", gridTemplateColumns:"33% 33% 33%", textAlign:"center"}}>
+                        {[1, 2, 3, 4, 5, 6, 7].map(() => {
+                            return <div style={{height:"30vh", marginLeft: "6px", marginTop: "6px", border:"1px solid #333333"}}>ddddd</div>
+                        })}
+                    </div>
+
 
                 </div>
             </div>
